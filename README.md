@@ -1,2 +1,2 @@
 # Lambda-Calculus
-Formal specification and interpreter for the lambda-calculus
+Interpreter for the lambda-calculus written in C++
