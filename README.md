@@ -1,2 +1,2 @@
 # Lambda-Calculus
-Formal specification and interpreter of the lambda-calculus
+Formal specification and interpreter for the lambda-calculus
