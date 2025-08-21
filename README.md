@@ -1,2 +1,2 @@
 # Lambda-Calculus
-Interpreter for the lambda-calculus written in C++
+Lambda-calculus evaluator written in C++ in one day
