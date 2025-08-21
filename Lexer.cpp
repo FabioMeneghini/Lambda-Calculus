@@ -1,8 +1,5 @@
 #include "Lexer.hpp"
 #include "LexerException.hpp"
-#include <cctype>
-#include <utility>
-#include <iostream>
 
 Lexer::Lexer(const std::string& input)
     : input(input), position(0) {}

@@ -1,5 +1,3 @@
-// Classe token per lambda-calculus
-
 #pragma once
 #include <string>
 

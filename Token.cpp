@@ -1,7 +1,5 @@
 #include "Token.hpp"
-#include <utility>
 #include <string>
-#include <iostream>
 
 Token::Token(const Token::Type type, const std::string& value)
     : type(type), value(std::move(value)) {}
