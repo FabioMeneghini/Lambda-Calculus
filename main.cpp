@@ -17,7 +17,14 @@ int main() {
         std::cerr << "Error: " << e.what() << std::endl;
     }
 
-    std::cout << "Parsing completed successfully." << std::endl;
+    ///////////////////////////////////
+    Lexer lexer("(\\x.(x x) a)");
+    std::vector<Token> tokens = lexer.tokenize();
+    Parser parser(tokens);
+    AST ast = parser.parse();
+    std::cout << "PRINT: " << ast.print(); // Print the AST representation
+    AST evaluatedAst = ast.eval(); // Evaluate the AST
+    std::cout << "\nEVAL: " << evaluatedAst.print(); // Print the evaluated
 
     return 0;
 }

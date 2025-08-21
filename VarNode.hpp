@@ -16,4 +16,6 @@ public:
 
     ExpNode* clone() const override;
     virtual ExpNode* substitute(const std::string& var, ExpNode* value) const override; // Substitute variable with value
+
+    std::string toString() const override; // Convert the variable node to a string representation
 };

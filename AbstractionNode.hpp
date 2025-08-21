@@ -15,4 +15,7 @@ public:
     ExpNode* eval() override; // Evaluate the abstraction node
 
     VarNode* getVar() const;
+    ExpNode* getBody() const;
+
+    std::string toString() const override; // Convert the abstraction node to a string representation
 };

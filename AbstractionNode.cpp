@@ -29,3 +29,11 @@ ExpNode* AbstractionNode::eval() {
 VarNode* AbstractionNode::getVar() const {
     return var;
 }
+
+ExpNode* AbstractionNode::getBody() const {
+    return body;
+}
+
+std::string AbstractionNode::toString() const {
+    return "\\" + var->getName() + ". " + body->toString();
+}

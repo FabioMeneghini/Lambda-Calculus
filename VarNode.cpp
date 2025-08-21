@@ -23,3 +23,7 @@ ExpNode* VarNode::substitute(const std::string& var, ExpNode* value) const {
     }
     return new VarNode(name); // Return a new VarNode if no substitution is made
 }
+
+std::string VarNode::toString() const {
+    return name; // Return the variable name as its string representation
+}
