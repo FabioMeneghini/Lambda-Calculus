@@ -8,6 +8,9 @@ private:
     ExpNode* rexp;
 public:
     ApplicationNode(ExpNode*, ExpNode*);
-
     virtual ~ApplicationNode();
+
+    ExpNode* eval() override; // Evaluate the application node
+    ExpNode* substitute(const std::string& var, ExpNode* value) const override; // Substitute variable with value
+    ExpNode* clone() const override; // Clone the application node
 };

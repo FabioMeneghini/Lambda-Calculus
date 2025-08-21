@@ -5,9 +5,9 @@ class AST {
 private:
     ExpNode* root;
 public:
-    AST(ExpNode*);
+    AST(ExpNode* = nullptr);
 
     ~AST();
 
-    //eval
+    AST eval() const; // Evaluate the AST
 };
