@@ -23,7 +23,7 @@ ExpNode* AbstractionNode::substitute(const std::string& varName, ExpNode* value)
 }
 
 ExpNode* AbstractionNode::eval() {
-    return this->clone(); // Abstraction nodes evaluate to themselves
+    return new AbstractionNode(static_cast<VarNode*>(var->clone()), body->eval()); // Evaluate the body of the abstraction
 }
 
 VarNode* AbstractionNode::getVar() const {
@@ -35,5 +35,5 @@ ExpNode* AbstractionNode::getBody() const {
 }
 
 std::string AbstractionNode::toString() const {
-    return "\\" + var->getName() + ". " + body->toString();
+    return "\\" + var->getName() + "." + body->toString();
 }
