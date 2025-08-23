@@ -1,2 +1,2 @@
 # Lambda-Calculus Evaluator
-Lambda-calculus evaluator written in C++ in one day
+Untyped lambda-calculus evaluator (big-step operational semantics) written in C++ in one day
